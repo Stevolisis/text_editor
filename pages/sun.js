@@ -33,7 +33,7 @@ export default function Sun() {
       <div className='admineditnamecon'>
             <div className='admineditname'>
             <p>Contents</p>
-            <SunEditor/>
+            <SunEditor content={content} setContent={setContent}/>
             </div>
         </div>
         <div>
