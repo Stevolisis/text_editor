@@ -8,19 +8,19 @@ export default function SunEditors({content,setContent}){
         value={content} 
         onChange={setContent}
         setOptions={{
-            buttonList:[[
-                "bold",
-                "underline",
-                "italic",
-                "strike",
-                "align",
-                "fontSize",
-                "formatBlock",
-                "table",
-                "image",
-                "video",
-                "audio",
-            ]]
+            buttonList:[        ['undo', 'redo'],
+            ['font', 'fontSize', 'formatBlock'],
+            ['paragraphStyle', 'blockquote'],
+            ['bold', 'underline', 'italic', 'strike', 'subscript', 'superscript'],
+            ['fontColor', 'hiliteColor', 'textStyle'],
+            ['removeFormat'],
+            '/', // Line break
+            ['outdent', 'indent'],
+            ['align','list', 'lineHeight'],
+            ['table', 'link', 'image', 'video', 'audio' /** ,'math' */], // You must add the 'katex' library at options to use the 'math' plugin.
+            /** ['imageGallery'] */ // You must add the "imageGalleryUrl".
+            ['fullScreen', 'codeView'],
+        ]
         }}
         />
     );
